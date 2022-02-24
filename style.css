@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Navbar */
+.navbar{
+    display: flex;
+    align-items: center;
+    background-color: rgb(19, 19, 156);
+    position: sticky;
+    top: 0;
+    justify-content: center;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 1px 0px;
+}
+.navbar ul li{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: aqua ;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+.navbar ul li a:hover{
+    background-color: aqua;
+    color:black;
+    box-shadow: 0 0 12px white;
+}
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(15, 8, 83);
+    height: 845px;
+    justify-content: center;
+    align-items: center;
+    color: aqua
+}
+#home::before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    width: 50%;
+}
+.headings{
+    font-family: century;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+.button{
+    padding: 10px 35px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: aqua;
+    outline: none;
+    transition: .6s ease;
+}
+.button:hover{
+    cursor: pointer;
+    background-color: aqua;
+    color: black;
+    box-shadow: 0 0 5px aqua, 0 0 10px white, 0 0 15px white;
+    font-weight: bold;
+}
+/* /about section */
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+    background-color: blueviolet;
+    color: black;
+}
+#pic{
+    display: flex;
+}
+#pic img{
+    width: 575px;
+    height: 400px;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+#intro h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Portfolio section */ 
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(196, 1, 186);
+    color: rgb(0, 0, 0);
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.gallery img{
+    width: 360px;
+    height: 240px;
+    margin: 10px;
+}
+
+/* Services section */
+#services{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: aqua;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 1px solid black;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 15px;
+    background: linear-gradient(to top, aqua 50%, rgb(196, 1, 186) 50%);
+    background-size: 100% 200%;
+    transition: all .5s;
+}
+.box:hover{
+    background-position: left bottom;
+    color: white;
+    border: none;
+    box-shadow: 0 0 25px rgb(110, 137, 255);
+}
+
+/* Contact Section */
+#contact{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgb(15, 8, 83);
+    color: white;
+    padding: 20px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+}
+.input{
+    padding: 10px;
+    margin: 12px;
+    width: 30%;
+    border: none;
+    outline: none;
+}
+#msg{
+    width: 20%;
+    padding: 10px;
+    margin: 12px;
+    border: none;
+    outline: none;
+}
+#send{
+    padding: 10px;
+    width: 12%;
+    margin: 40px;
+    border: none;
+    outline: none;
+}
+#send:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px aqua;
+}
